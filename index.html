@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>勇敢牛曰</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .mySlides {
+        display: none;
+      }
+    </style>
+    <script src="cowCodec.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <h1 class="w3-bar-item w3-padding-large">勇敢牛曰</h2>
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+      <!-- The Band Section -->
+      <div
+        class="w3-container w3-content w3-center w3-padding-top-64"
+        style="max-width: 800px"
+        id="band"
+      >
+        <h2 class="w3-wide">『牛曰，要有勇敢，于是便有了勇敢。』</h2>
+        <!-- <p class="w3-opacity"><i>We love music</i></p> -->
+        <!-- <p class="w3-justify w3-center">cowsay -w "Let there be braveness"</p> -->
+        <p class="w3-justify w3-center">
+          牛は言った、勇敢になれと、だから勇敢さがあった
+        </p>
+      </div>
+
+      <!-- The Contact Section -->
+      <div
+        class="w3-container w3-content w3-padding-16"
+        style="max-width: 1000px"
+        id="contact"
+      >
+        <div class="w3-row w3-padding-32">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+              <div class="w3-center">
+                <textarea
+                  id="humanSay"
+                  class="w3-border"
+                  placeholder="勇敢牛牛不怕困难！今天要勇敢什么呢？"
+                  style="height: 150px; max-width: 90%; min-width: 80%"
+                ></textarea>
+              </div>
+              <div
+                class="w3-center"
+                style="max-width: 80%; margin: auto; overflow: hidden"
+              >
+                <button
+                  class="w3-button w3-black w3-section m6"
+                  type="button"
+                  style="width: 45%; margin-right: 2%"
+                  onclick="cowEncode()"
+                >
+                  终极勇敢！ ↓
+                </button>
+                <button
+                  class="w3-button w3-black w3-section m6"
+                  type="button"
+                  style="width: 45%; margin-left: 2%"
+                  onclick="cowDecode()"
+                >
+                  说人话！ ↑
+                </button>
+              </div>
+              <div class="w3-center">
+                <textarea
+                  id="cowSay"
+                  class="w3-border"
+                  placeholder="困难牛牛不怕勇敢，太难了，还是说人话吧。"
+                  style="height: 300px; max-width: 90%; min-width: 80%"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"
+    >
+      <a href="https://github.com/MUTED64"
+        ><i class="fa fa-github w3-hover-opacity"></i
+      ></a>
+      <p class="w3-medium">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
